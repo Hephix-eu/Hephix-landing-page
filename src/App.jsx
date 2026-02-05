@@ -37,6 +37,14 @@ export default function App() {
                 <a className="btn ghost" href="#contact">
                   Contact Us
                 </a>
+                <a
+                  className="btn ghost"
+                  href="https://demo.hephix.eu"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Try Demo
+                </a>
               </div>
               <div className="hero-meta">
                 <div>
