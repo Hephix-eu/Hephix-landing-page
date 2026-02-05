@@ -12,7 +12,6 @@ export default function App() {
           </div>
           <nav className="nav-links">
             <a href="#solution">Solution</a>
-            <a href="#phases">Roadmap</a>
             <a href="#contact">Contact</a>
           </nav>
         </div>
@@ -159,9 +158,9 @@ export default function App() {
             </div>
             <div className="stats">
               <div className="stat">
-                <p className="label">Service fee</p>
-                <h3>2–3% per order</h3>
-                <p>Charged to buyers as a transparent service fee.</p>
+                <p className="label">Faster triage</p>
+                <h3>Diagnose in seconds</h3>
+                <p>AI-guided checks that cut first-response time.</p>
               </div>
               <div className="stat">
                 <p className="label">Supplier onboarding</p>
@@ -191,39 +190,6 @@ export default function App() {
               <div className="loop">
                 <h3>Supplier Loop</h3>
                 <p>More demand → more suppliers → better availability → more demand.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="phases" id="phases">
-          <div className="container">
-            <div className="section-title">
-              <p className="eyebrow">Growth Plan</p>
-              <h2>Launch with focus, scale with momentum</h2>
-            </div>
-            <div className="phase-grid">
-              <div className="phase">
-                <span>Phase 1</span>
-                <h3>Early access & curated knowledge</h3>
-                <p>
-                  Start with coffee machines and similar electronics. Free AI agent, curated data.
-                </p>
-              </div>
-              <div className="phase">
-                <span>Phase 2</span>
-                <h3>Repair shop expansion</h3>
-                <p>
-                  Market to service centers, expand to bikes and sports equipment, launch
-                  subscriptions.
-                </p>
-              </div>
-              <div className="phase">
-                <span>Phase 3</span>
-                <h3>Marketplace automation</h3>
-                <p>
-                  Promoted products, large knowledge base, migration tools for ticketing systems.
-                </p>
               </div>
             </div>
           </div>
