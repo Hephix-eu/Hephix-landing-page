@@ -1,6 +1,22 @@
+import { useState } from "react";
+
 const contactEmail = "contact@hephix.eu";
 
 export default function App() {
+  const [workEmail, setWorkEmail] = useState("");
+
+  const handleEarlyAccessSubmit = (event) => {
+    event.preventDefault();
+    if (!workEmail.trim()) {
+      return;
+    }
+    const subject = "Early Access Request";
+    const body = `Early access request from: ${workEmail.trim()}`;
+    window.location.href = `mailto:${contactEmail}?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+  };
+
   return (
     <div>
       <div className="bg-grid" aria-hidden="true" />
@@ -211,8 +227,15 @@ export default function App() {
                 Join early access to shape the AI that powers modern service teams.
               </p>
             </div>
-            <form className="cta-form">
-              <input type="email" placeholder="Work email" aria-label="Work email" />
+            <form className="cta-form" onSubmit={handleEarlyAccessSubmit}>
+              <input
+                type="email"
+                placeholder="Work email"
+                aria-label="Work email"
+                required
+                value={workEmail}
+                onChange={(event) => setWorkEmail(event.target.value)}
+              />
               <button className="btn primary" type="submit">
                 Request Early Access
               </button>
